@@ -57,13 +57,19 @@ a:hover::before {
 }
 
 body {
+    position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+
     /* adjust for header */
-    margin-top: -4rem;
+    margin-top: -8rem;
     color: var(--primary-colour);
     background-color: var(--document-colour);
     font-family: var(--secondary-font);
     font-size: large;
     animation: fadeIn ease 2s;
+
+    transition: left 0.3s;
 }
 
 .footer {
@@ -78,7 +84,10 @@ body {
     font-family: var(--primary-font);
     font-size: xx-large;
     font-weight: bold;
-    padding: 0rem 1rem;
+}
+
+.section-header{
+    padding: 0rem 2rem;
 }
 
 .special,
@@ -123,6 +132,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     min-height: 50rem;
 }
 
