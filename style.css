@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 a {
@@ -62,7 +63,7 @@ body {
     overflow-x: hidden;
 
     /* adjust for header */
-    margin-top: -8rem;
+    /* margin-top: -8rem; */
     color: var(--primary-colour);
     background-color: var(--document-colour);
     font-family: var(--secondary-font);
@@ -84,11 +85,10 @@ body {
     font-family: var(--primary-font);
     font-size: xx-large;
     font-weight: bold;
+    padding: 0rem 0rem 0rem 0rem;
+
 }
 
-.section-header{
-    padding: 0rem 2rem;
-}
 
 .special,
 .section-header {
@@ -103,7 +103,7 @@ body {
 .section-header {
     font-size: 6rem;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     width: fit-content;
 }
 
@@ -123,8 +123,16 @@ body {
     height: 120vh;
 }
 
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 200vw;
+    /* margin-left: -50vw; */
+}
+
 .section {
     height: 50vh;
+    width: 100vw;
 }
 
 .title-section,
@@ -214,7 +222,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: -35px;
+    /* margin-top: -35px; */
 }
 
 #experience-section .section-header,
@@ -226,7 +234,9 @@ body {
 .bottom-divider.right,
 .top-divider.left,
 .bottom-divider.left {
-    clip-path: polygon(0 3vw, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 3rem, 100% 0, 100% 100%, 0 100%);
+    width: 200vw;
+    /* margin-left: -50vw; */
     height: 100px;
 }
 

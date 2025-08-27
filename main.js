@@ -29,7 +29,6 @@ jQuery(document).ready(function() {
     };
     function createD(top, ax, dir) {
 		var h = screen.height;
-		//var h = $(window).height();
         return 'M0,0 ' + top + ',0 a' + ax + ',250 0 1,' + dir + ' 0,' + h + ' L0,' + h + '';
     }
     var startD = createD(15, 0, 1),
