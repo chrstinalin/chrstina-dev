@@ -10,86 +10,110 @@
 
 
 <header>
-    <div id="header-name" class="title">Christina Lin</div>
-    <div class="header-links">
-        <a href="#home">Home</a> | <a href="#about-section">About</a> | <a href="#experience-section">Experience</a> |
-        <a href="#projects-section">Projects</a> | <a href="#contact-section">Contact</a>
-    </div>
+    <div id="header-name" class="title">Christina Lin</div>>
+    <nav role="navigation">
+        <div class="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#home"><label for="menuCheckbox" onclick="this.parentNode.click();">Home</label></a>
+                    </li>
+                    <li><a href="#about-section"><label for="menuCheckbox"
+                                onclick="this.parentNode.click();">About</label></a></li>
+                    <li><a href="#experience-section"><label for="menuCheckbox"
+                                onclick="this.parentNode.click();">Experience</label></a></li>
+                    <li><a href="#projects-section"><label for="menuCheckbox"
+                                onclick="this.parentNode.click();">Projects</label></a></li>
+                    <li><a href="#contact-section"><label for="menuCheckbox"
+                                onclick="this.parentNode.click();">Contact</label></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
 </header>
 
 <body>
 
+    <main>
 
+        <!-- HOME -->
+        <section id="home" class="title-section">
+            <div id="main-title" class="funnel-display shadow-animation">Hello, World!</div>
+        </section>
 
-    <section id="home" class="title-section">
+        <!-- ABOUT -->
+        <section id="about-section">
 
-        <div id="main-title" class="funnel-display shadow-animation">
-            Hello, World!
-        </div>
-
-    </section>
-
-    <section id="about-section">
-
-        <div class="section-header-wrapper">
-            <div class="section-header">About Me</div>
-            <div class="primary-color top-divider right"></div>
-        </div>
-
-
-        <div class="primary-color section">
-
-            <div class="subsection">
-                <div class="special title">Hi, I'm Christina!</div>
-                <p>I'm a University of Toronto CS Specialist graduating in <b>May 2026</b>. <br /><br />
-                    I'm a challenge-seeker who strives to go above and beyond. <br /><br />
-                    I mainly work with <b>full-stack development</b>, but you can find me doing digital illustration in
-                    my spare time.
-                </p>
+            <div class="section-header-wrapper">
+                <div class="section-header">About Me</div>
+                <div class="primary-color top-divider right"></div>
             </div>
 
-            <div class="subsection image-area"></div>
+            <div class="primary-color section-wrapper">
+                <div class="primary-color section">
+                    <div class="subsection">
+                        <div class="special title">Hi, I'm Christina!</div>
+                        <p>I'm a University of Toronto CS Specialist graduating in <b>May 2026</b>. <br /><br />
+                            I'm a challenge-seeker who strives to go above and beyond. <br /><br />
+                            I mainly work with <b>full-stack development</b>, but you can find me doing digital
+                            illustration
+                            in
+                            my spare time.
+                        </p>
+                    </div>
+                    <div class="subsection image-area"></div>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <!-- EXPERIENCE -->
+        <section id="experience-section">
+            <div class="section-header-wrapper">
+                <div class="primary-color bottom-divider right"></div>
+                <div class="section-header">Experience</div>
+            </div>
+            <div class="section">
+            </div>
+        </section>
 
-    </section>
+        <!-- PROJECTS -->
+        <section id="projects-section">
+            <div class="section-header-wrapper">
+                <div class="section-header">Projects</div>
+                <div class="primary-color top-divider left"></div>
+            </div>
+            <div class="primary-color section-wrapper">
+                <div class="primary-color section">
+                </div>
+            </div>
+        </section>
 
-    <section id="experience-section">
-        <div class="section-header-wrapper">
-            <div class="primary-color bottom-divider right"></div>
-            <div class="section-header">Experience</div>
-        </div>
-        <div class="section">
-        </div>
-    </section>
+        <!-- CONTACT -->
+        <section id="contact-section">
+            <div class="section-header-wrapper">
+                <div class="primary-color bottom-divider left"></div>
+                <div class="section-header">Contact</div>
+            </div>
 
+            <div class="section">
+            </div>
+        </section>
 
-    <section id="projects-section">
-        <div class="section-header-wrapper">
-            <div class="section-header">Projects</div>
-            <div class="primary-color top-divider left"></div>
-        </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="primary-color top-divider right"></div>
+            </div>
+            <div class="section-wrapper">
+                <div class="primary-color footer">© Christina Lin 2025</div>
 
-        <div class="primary-color section">
-        </div>
+            </div>
+        </footer>
 
-    </section>
-
-    <section id="contact-section">
-        <div class="section-header-wrapper">
-            <div class="primary-color bottom-divider left"></div>
-            <div class="section-header">Contact</div>
-        </div>
-
-        <div class="section">
-        </div>
-    </section>
-
-    <footer>
-        <div class="primary-color top-divider right"></div>
-        </div>
-        <div class="primary-color footer">© Christina Lin 2025</div>
-    </footer>
+    </main>
 
 
 </body>
