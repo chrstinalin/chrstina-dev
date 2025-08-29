@@ -70,11 +70,28 @@ body {
     margin: 0rem 0.5rem;
 }
 
+.special {
+    margin: 1rem;
+    line-height: 1em;
+}
+
 .section-header {
     font-size: 6rem;
     position: relative;
     z-index: 2;
     width: fit-content;
+}
+
+#about-section .section-header {
+    margin-top: -50px;
+}
+
+#projects-section .section-header {
+    margin-top: -80px;
+}
+
+#contact-section .section-header {
+    margin-top: -45px;
 }
 
 @media (max-width: 50em) {
@@ -109,16 +126,19 @@ body {
 }
 
 .section {
-    padding: 0 10rem;
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .subsection {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding: 0 6rem;
+}
+
+.subsection p {
+    width: 50vw;
+    max-width: 25rem;
+    padding: 1rem;
 }
 
 .popup {
@@ -471,4 +491,3 @@ main.menu-open {
 #icon-item-3-thin {
   border-left: 1.5px solid DimGrey;
 }
-
